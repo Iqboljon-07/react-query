@@ -2,7 +2,7 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react";
 import Loading from "../loading/Loading";
 import { toast } from "react-toastify";
-import Navbar from "../navbar/navbar";
+import Top from "../navbar/Navbar.jsx";
 
 function Myproject() {
   const ParpageCount = 8;
@@ -46,9 +46,9 @@ function Myproject() {
 
   return (
     <>
-      <Navbar count={ofset} parpag={ParpageCount}>
+      <Top count={ofset} parpag={ParpageCount}>
         <h1>{ofset * ParpageCount} </h1>
-      </Navbar>
+      </Top>
       <div className="user">
         {data.map((user) => (
           <div key={user.id} className="user_item">
@@ -58,7 +58,7 @@ function Myproject() {
           </div>
         ))}
       </div>
-      <button className="btn">show more</button>
+      <button>show more</button>
     </>
   );
 }

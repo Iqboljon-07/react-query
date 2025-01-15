@@ -13,7 +13,7 @@ const CartBadge = styled(Badge)`
   }
 `;
 
-function Navbar({ count, parpag, children }) {
+function Top({ count, parpag, children }) {
   console.log(count);
   return (
     <>
@@ -43,4 +43,4 @@ function Navbar({ count, parpag, children }) {
   );
 }
 
-export default Navbar;
+export default Top;

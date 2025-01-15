@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import MyComponent from "./components/MyComponent";
 import { toast, ToastContainer } from "react-toastify";
-import Navbar from "./components/navbar/navbar";
+
 const queryClient = new QueryClient();
 function App() {
   return (

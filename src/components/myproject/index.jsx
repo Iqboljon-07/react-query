@@ -58,7 +58,9 @@ function Myproject() {
           </div>
         ))}
       </div>
-      <button>show more</button>
+      <button className="btn" onClick={Showmore}>
+        show more
+      </button>
     </>
   );
 }

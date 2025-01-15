@@ -4,7 +4,7 @@ import Loading from "../loading/Loading";
 import { toast } from "react-toastify";
 import Navbar from "../navbar/navbar";
 
-function MyComponent() {
+function Myproject() {
   const ParpageCount = 8;
   const [ofset, setOfset] = useState(1);
   const getTodos = async ({ queryKey }) => {
@@ -58,11 +58,9 @@ function MyComponent() {
           </div>
         ))}
       </div>
-      <button className="btn" onClick={Showmore}>
-        show more
-      </button>
+      <button className="btn">show more</button>
     </>
   );
 }
 
-export default MyComponent;
+export default Myproject;

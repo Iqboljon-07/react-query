@@ -2,14 +2,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 
 import { ToastContainer } from "react-toastify";
-import MyComponent from "./components/mycomponent/index.jsx";
+import Myproject from "./components/myproject";
 
 const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <MyComponent />
-
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -22,6 +20,7 @@ function App() {
         pauseOnHover
         theme="colored"
       />
+      <Myproject />
     </QueryClientProvider>
   );
 }
